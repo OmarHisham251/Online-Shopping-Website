@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
 <link href="bootstrap.css" rel="stylesheet">
-
+<link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -32,16 +32,36 @@
 
     
   </head>
-  <body>
+  <body style="background: black;" >
     
     <header>
-
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white" style="text-align: center;" >description</h4>
+              <p class="text-muted" style="text-align: center;" >This is a website to buy things online, such as smartphones, laptops, consoles, tablets or accessories.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white" style="text-align: center;" >Contact</h4>
+              <ul class="list-unstyled">
+                <li><p class="text-muted" style="text-align: center;" >My Phone Number 0123456789 
+                  <br>
+                  Email Me Omar.Hisham@gmail.com</p></li>
+                <li><p class="text-muted"></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container">
           <a class="navbar-brand d-flex align-items-center">
-            <strong>tablets</strong>
+            <strong> <i class="fas fa-shopping-cart"></i> Omar Technology Shopping</strong>
           </a>
-
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
       </div>
     </header>
@@ -51,16 +71,16 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">tablets</h1>
+        <h1 class="fw-light text-white ">tablets</h1>
         <p class="lead text-muted"></p>
         <p>
-          <a href="index.html" class="btn btn-dark">Back To HomePage</a>
+          <a href="index.html" class="btn btn-light">Back To HomePage</a>
         </p>
       </div>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-dark">
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -209,13 +229,13 @@
 <footer class="text-muted py-5">
   <div class="container">
     <p class="float-end mb-1">
-      <a href="#">Back to top</a>
+      <a href="#" class="text-white" >Back to top</a>
     </p>
   </div>
 </footer>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap.js" ></script>
 
       
   </body>
